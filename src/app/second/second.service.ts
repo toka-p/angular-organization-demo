@@ -22,8 +22,7 @@ export class SecondService {
   }
 
   constructor(private readonly api: RepositoryService) {
-    timer(1, environment.apiPollTime).subscribe(() => this.loadRandomRepo());
-    console.log('This service is active only in second module');
+    timer(0, environment.apiPollTime).subscribe(() => this.loadRandomRepo());
   }
 
   private loadRandomRepo() {
