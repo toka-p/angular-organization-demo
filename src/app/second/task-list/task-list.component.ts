@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TasksService } from '../../core/services/tasks.service';
-import { AutoUnsubscribeComponent } from '../../shared/auto-unsubscribe.component';
+import { AutoUnsubscribeComponent } from '../../shared/components/auto-unsubscribe.component';
 import { takeUntil } from 'rxjs/operators';
 import { Task } from '../../models/Task';
 
