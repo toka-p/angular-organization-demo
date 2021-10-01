@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ThirdComponent } from './third/third.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { SecondService } from './second.service';
 
 const routes: Routes = [
   {path: '', component: SecondComponent},
@@ -21,6 +22,9 @@ const routes: Routes = [
   imports: [
     SharedModule,
     RouterModule.forChild(routes)
+  ],
+  providers: [
+    SecondService
   ]
 })
 export class SecondModule { }

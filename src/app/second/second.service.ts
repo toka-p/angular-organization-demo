@@ -13,9 +13,7 @@ import { environment } from '../../environments/environment';
  * Keep as much business logic in services as possible.
  */
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class SecondService {
   private readonly _repoSubject = new ReplaySubject<Repository>();
 
@@ -25,6 +23,7 @@ export class SecondService {
 
   constructor(private readonly api: RepositoryService) {
     timer(1, environment.apiPollTime).subscribe(() => this.loadRandomRepo());
+    console.log('This service is active only in second module');
   }
 
   private loadRandomRepo() {
