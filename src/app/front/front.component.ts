@@ -17,7 +17,7 @@ export class FrontComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    // Without this there is a memory leak if person navigates to anotherp age
+    // Without this there is a memory leak if person navigates to another age
     this.dataSub = this.frontService.dataSubject.subscribe(isTrue => {
       console.log('Received value', isTrue);
       this.displayMessage = isTrue;
