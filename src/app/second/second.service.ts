@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ApiService } from '../core/services/api.service';
+import { RepositoryService } from '../core/services/repository.service';
 import { Observable, ReplaySubject, timer } from 'rxjs';
 import { Repository } from '../models/Repository';
 import { environment } from '../../environments/environment';
@@ -23,7 +23,7 @@ export class SecondService {
     return this._repoSubject.asObservable();
   }
 
-  constructor(private readonly api: ApiService) {
+  constructor(private readonly api: RepositoryService) {
     timer(1, environment.apiPollTime).subscribe(() => this.loadRandomRepo());
   }
 

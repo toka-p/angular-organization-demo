@@ -7,7 +7,7 @@ const baseUrl = 'https://api.github.com/users/by-pinja/repos';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class RepositoryService {
 
   constructor(private http: HttpClient) {
   }
