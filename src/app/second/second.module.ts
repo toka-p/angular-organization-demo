@@ -4,6 +4,7 @@ import { SecondComponent } from './second.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ThirdComponent } from './third/third.component';
+import { TaskListComponent } from './task-list/task-list.component';
 
 const routes: Routes = [
   {path: '', component: SecondComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     SecondComponent,
-    ThirdComponent
+    ThirdComponent,
+    TaskListComponent
   ],
   imports: [
     SharedModule,

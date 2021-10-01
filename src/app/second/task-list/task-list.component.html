@@ -1,0 +1,5 @@
+<div class="task" *ngFor="let t of tasks">
+  {{t.title}}
+  <span *ngIf="t.done">{{'done' | toUpperCase}}</span>
+  <button (click)="markTaskAsDone(t)" *ngIf="!t.done">Mark as done</button>
+</div>

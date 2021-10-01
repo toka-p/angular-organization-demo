@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './components/card/card.component';
 import { ToUpperCasePipe } from './pipes/to-upper-case.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,11 +12,16 @@ import { ToUpperCasePipe } from './pipes/to-upper-case.pipe';
     ToUpperCasePipe
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     CommonModule,
-    CardComponent
+    FormsModule,
+    ReactiveFormsModule,
+    CardComponent,
+    ToUpperCasePipe
   ]
 })
 export class SharedModule { }

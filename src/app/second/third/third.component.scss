@@ -1,0 +1,19 @@
+form {
+  background: #ffffff;
+  font-size: 1.6rem;
+  padding: 1em;
+
+  label {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 0.2em;
+    border: 0.1em solid blue;
+    padding: 0.25em 0.5em;
+
+  }
+}

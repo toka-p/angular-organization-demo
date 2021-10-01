@@ -1,1 +1,15 @@
-<od-card message="Third page. Notice the url"></od-card>
+<h2>Third page</h2>
+<p>
+  This page demonstrates two things.
+</p>
+<p>1. How to have different components share data via single service.</p>
+<p>2. What happens if you don't unsubscribe from certian subscriptions (causes memory leak)</p>
+
+<form [formGroup]="form" (submit)="onSubmit()">
+  <label for="taskName">Task name</label>
+  <input [formControlName]="'title'" id="taskName" name="taskName" type="text" />
+  <button>Save task</button>
+</form>
+
+
+<od-task-list></od-task-list>
