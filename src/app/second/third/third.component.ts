@@ -29,5 +29,6 @@ export class ThirdComponent implements OnInit {
     console.log('Form submitted');
     const task = this.form.value;
     this.tasksService.addTask(task);
+    this.form.controls.title.setValue('');
   }
 }

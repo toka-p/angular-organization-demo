@@ -1,0 +1,22 @@
+.task {
+    height: 6em;
+    background: #edffff;
+    width: 75%;
+    min-width: 35em;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 0.25em;
+
+    &.done {
+        background: #9bcfcf;
+    }
+
+    button {
+        font-size: 1.6em;
+        padding: 0.5em 0.75em;
+    }
+}
